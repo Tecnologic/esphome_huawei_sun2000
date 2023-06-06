@@ -2,7 +2,8 @@ esphome:
   name: huawei
 
 esp32:
-  board: esp32doit-devkit-v1
+  board: lolin_s2_mini
+  variant: esp32s2
   framework:
     type: esp-idf
 
@@ -25,8 +26,8 @@ switch:
 uart:
   id: mod_bus
   baud_rate: 9600
-  tx_pin: GPIO17  # TX2
-  rx_pin: GPIO16  # RX2
+  tx_pin: GPIO16  # TX2
+  rx_pin: GPIO18  # RX2
   rx_buffer_size: 1024
   data_bits: 8
   stop_bits: 1
